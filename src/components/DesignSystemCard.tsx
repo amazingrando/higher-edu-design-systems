@@ -12,17 +12,17 @@ interface DesignSystem {
 
 export const DesignSystemCard = ({ name, url, institution }: DesignSystem) => {
   return (
-    <Card className="flex flex-col h-full">
-      <CardHeader>
-        <h3 className="text-lg font-semibold">{name}</h3>
-        <p className="text-sm text-muted-foreground">{institution}</p>
+    <Card className="flex flex-col h-full bg-yellow-50">
+      <CardHeader className="text-green-dark">
+        <h3 className="text-2xl font-semibold">{name}</h3>
+        <p className="text-lg">{institution}</p>
       </CardHeader>
       <CardContent className="flex-grow">
       </CardContent>
       <CardFooter>
-        <Button variant="outline" className="w-full" onClick={() => window.open(url, '_blank')}>
-          <ExternalLink className="w-4 h-4 mr-2" />
+        <Button variant="outline" className="w-full bg-yellow-400 ring-yellow-500 ring-1 text-yellow-950 hover:bg-yellow-500" onClick={() => window.open(url, '_blank')}>
           View Design System
+          <ExternalLink className="w-4 h-4 mr-2" />
         </Button>
       </CardFooter>
     </Card>

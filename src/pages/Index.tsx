@@ -1,15 +1,13 @@
-
 import React, { useState } from 'react';
 import { DesignSystemCard } from '@/components/DesignSystemCard';
 import { SearchBar } from '@/components/SearchBar';
 import { designSystems } from '@/data/designSystems';
-import { Button } from '@/components/ui/button';
-import { Plus } from 'lucide-react';
 import bgImage from '@/assets/images/bg.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faBuildingColumns,
 } from '@fortawesome/pro-regular-svg-icons';
+import { AddYourDS } from '@/components/AddYourDS';
 
 const Index = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -26,43 +24,39 @@ const Index = () => {
           <FontAwesomeIcon icon={faBuildingColumns} className="text-5xl relative top-1" />
           <div className="max-w-2xl">
             <h1 className="text-6xl text-balance font-bold mb-4">The Design Systems of Higher Education</h1>
-            <p className="text-3xl mb-8 text-balance">
+            <p className="text-3xl mb-8 text-balance font-medium">
               A curated collection of design systems from universities around the world
             </p>
-            {/* <div className="max-w-xl mx-auto mb-8">
-              <SearchBar onSearch={setSearchTerm} />
-              </div> */}
+            <p className="text-lg font-medium">Sponsored by <a href="https://amazingrando.com" target="_blank" rel="noopener noreferrer" className="underline">Amazing Rando Design</a></p>
           </div>
         </header>
 
-        {/* <div className="text-center bg-accent/20 rounded-lg p-8 mb-12 max-w-3xl mx-auto">
-          <h2 className="text-2xl font-semibold mb-3">Have a Design System to Share?</h2>
-          <p className="text-muted-foreground mb-6">
-            If your institution has a design system that's not listed here, we'd love to add it to our collection.
-            Help us grow this resource for the higher education community.
-          </p>
-          <Button onClick={() => window.open('https://github.com/your-repo/your-project/issues/new', '_blank')}>
-            <Plus className="mr-2" />
-            Submit Your Design System
-          </Button>
-        </div> */}
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredSystems.map((system) => (
-            <DesignSystemCard
-              key={system.url}
-              name={system.name}
-              url={system.url}
-              institution={system.institution}
-            />
-          ))}
-        </div>
+        <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredSystems
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((system, index) => (
+              <React.Fragment key={system.url}>
+                <DesignSystemCard
+                  name={system.name}
+                  url={system.url}
+                  institution={system.institution}
+                />
+                {index === 1 && <div className="md:hidden"><AddYourDS /></div>}
+                {index === 3 && <div className="hidden md:block lg:hidden"><AddYourDS /></div>}
+                {index === 2 && <div className="hidden lg:block"><AddYourDS /></div>}
+              </React.Fragment>
+            ))}
+        </main>
 
         {filteredSystems.length === 0 && (
           <div className="text-center py-12">
             <p className="text-lg text-muted-foreground">No design systems found matching your search.</p>
           </div>
         )}
+
+        <footer className="border-t border-yellow-500/20 py-8 text-center text-white mt-8">
+          <p>Build with ❤️ by <a href="https://amazingrando.com" target="_blank" rel="noopener noreferrer" className="underline">Amazing Rando Design</a></p>
+        </footer>
       </div>
     </div>
   );
