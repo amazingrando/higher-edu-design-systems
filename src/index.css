@@ -1,6 +1,9 @@
+@import './assets/stylesheets/general-sans.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 @layer base {
   :root {

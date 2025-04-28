@@ -61,6 +61,9 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				green: {
+					dark: '#192116'
 				}
 			},
 			borderRadius: {
@@ -68,6 +71,9 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			fontFamily: {
+        base: ['GeneralSans-Variable', 'system-ui', 'sans-serif'],
+      },
 			keyframes: {
 				'accordion-down': {
 					from: {
