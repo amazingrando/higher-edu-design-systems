@@ -32,7 +32,7 @@ const Index = () => {
           </div>
         </header>
 
-        <main className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+        <main className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 md:gap-6">
           {filteredSystems
             .sort((a, b) => a.name.localeCompare(b.name))
             .map((system, index) => (
@@ -41,6 +41,7 @@ const Index = () => {
                   name={system.name}
                   url={system.url}
                   institution={system.institution}
+                  logo={system.logo}
                 />
                 {index === 1 && <div className="md:hidden col-span-2"><AddYourDS /></div>}
                 {index === 3 && <div className="hidden md:block lg:hidden col-span-2"><AddYourDS /></div>}
