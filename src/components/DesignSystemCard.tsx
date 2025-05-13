@@ -16,11 +16,8 @@ export const DesignSystemCard = ({ name, url, institution, logo }: DesignSystem)
       <CardHeader className="text-green-dark p-0">
         {logo && 
           (
-          // <div className="w-full mx-auto mb-2 md:mb-4 aspect-video bg-yellow-500/30 rounded p-2 md:p-4 flex items-center justify-center">
-          //   <img src={logo} alt={name} className="max-h-[50px] md:max-h-[180px]" />
-          // </div>
-          <div className=" bg-yellow-500/30 rounded p-2 md:p-4 flex items-center justify-center">
-            <img src={logo} alt={name} className="aspect-video object-contain max-h-[100px] md:max-h-[180px]" />
+          <div className=" bg-yellow-500/30 rounded p-2 md:p-8 flex items-center justify-center">
+            <img src={logo} alt={name} className="aspect-video object-contain max-h-[100px] h-[60px] md:max-h-[180px] md:h-[100px] lg:h-[150px]" />
           </div>
           )}
       </CardHeader>

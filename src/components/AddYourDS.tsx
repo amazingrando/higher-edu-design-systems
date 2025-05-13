@@ -9,7 +9,7 @@ export const AddYourDS = () => {
         If your institution has a design system that's not listed here, we'd love to add it to our collection.
         Help us grow this resource for the higher education community.
       </p>
-      <Button onClick={() => window.open('https://github.com/amazingrando/higher-edu-design-systems/issues/new', '_blank')}>
+      <Button className="w-min mx-auto" onClick={() => window.open('https://github.com/amazingrando/higher-edu-design-systems/issues/new/choose', '_blank')}>
         <Plus className="mr-2" />
         Submit Your Design System
       </Button>
