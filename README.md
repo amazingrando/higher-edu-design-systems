@@ -1,4 +1,6 @@
 # Higher Education Design Systems Collection
+  
+![Higher Education Design Systems Collection](public/sharing-image.png) 
 
 A curated collection of design systems from universities around the world. This project aims to showcase and document the design systems used by higher education institutions, making it easier for designers and developers to learn from and reference these systems.
 
