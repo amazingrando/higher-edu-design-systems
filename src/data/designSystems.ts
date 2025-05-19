@@ -2,7 +2,6 @@ import columbia from "@/assets/images/logos/columbia.png"
 import illinoisState from "@/assets/images/logos/Illinois State University.png"
 import iu from "@/assets/images/logos/iu.svg"
 import leeds from "@/assets/images/logos/leeds.png"
-import osuNavbar from "@/assets/images/logos/osu-navbar.svg"
 import osu from "@/assets/images/logos/osu.png"
 import stanford from "@/assets/images/logos/Stanford_logo.png"
 import ucla from "@/assets/images/logos/ucla.png"
@@ -16,6 +15,7 @@ import binghamton from "@/assets/images/logos/Binghamton University.png"
 import newcastle from "@/assets/images/logos/Newcastle University.jpg"
 import asu from "@/assets/images/logos/arizona-state-university-logo-vertical-uITMCR3E.png"
 import wvu from "@/assets/images/logos/wvu.svg"
+import yale from "@/assets/images/logos/yale.jpg"
 
 export const designSystems = [
   {
@@ -119,5 +119,11 @@ export const designSystems = [
     institution: "Texas A&M University",
     url: "https://aggieux.tamu.edu/index.html",
     logo: texasAAndM
+  },
+  {
+    name: "YaleSites",
+    institution: "Yale University",
+    url: "https://github.com/yalesites-org/component-library-twig",
+    logo: yale
   }
 ];
