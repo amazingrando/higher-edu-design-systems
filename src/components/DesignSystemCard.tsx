@@ -22,8 +22,8 @@ export const DesignSystemCard = ({ name, url, institution, logo }: DesignSystem)
           )}
       </CardHeader>
       <CardContent className="p-3 md:p-6">
-        <h3 className="text-lg leading-tight md:text-2xl font-semibold">{name}</h3>
-        <p className="text-sm md:text-lg">{institution}</p>
+        <h3 className="text-lg leading-tight md:text-2xl font-semibold text-balance">{name}</h3>
+        <p className="text-sm md:text-lg text-balance">{institution}</p>
       </CardContent>
       <CardFooter className="mt-auto p-3 md:p-6">
         <Button variant="outline" className="w-full bg-yellow-400 ring-yellow-500 ring-1 text-yellow-950 hover:bg-yellow-500" onClick={() => window.open(url, '_blank')}>
