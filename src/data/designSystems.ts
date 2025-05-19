@@ -16,6 +16,7 @@ import newcastle from "@/assets/images/logos/Newcastle University.jpg"
 import asu from "@/assets/images/logos/arizona-state-university-logo-vertical-uITMCR3E.png"
 import wvu from "@/assets/images/logos/wvu.svg"
 import yale from "@/assets/images/logos/yale.jpg"
+import uclaGeffen from "@/assets/images/logos/ucla-geffen.svg"
 
 export const designSystems = [
   {
@@ -125,5 +126,11 @@ export const designSystems = [
     institution: "Yale University",
     url: "https://github.com/yalesites-org/component-library-twig",
     logo: yale
+  },
+  {
+    name: "Surface",
+    institution: "David Geffen School Of Medicine at UCLA Health",
+    url: "https://medschool.ucla.edu/themes/custom/surface/storybook/",
+    logo: uclaGeffen
   }
 ];
