@@ -16,7 +16,7 @@ import maryland from "@/assets/images/logos/University of Maryland Logo Dark.svg
 import melbourne from "@/assets/images/logos/melbourne.svg"
 import michigan from "@/assets/images/logos/University of Michigan.png"
 import minnesota from "@/assets/images/logos/university_of-minnesota-logo-freelogovectors.net_-4276898260.png"
-import missouri from "@/assets/images/logos/Missouri.svg"
+import missouri from "@/assets/images/logos/missouri.svg"
 import missouriState from "@/assets/images/logos/MU Logo.svg"
 import nebraska from "@/assets/images/logos/unl.png"
 import newcastle from "@/assets/images/logos/Newcastle University.jpg"
