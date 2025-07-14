@@ -1,22 +1,42 @@
+import aalto from "@/assets/images/logos/aalto.png"
+import asu from "@/assets/images/logos/arizona-state-university-logo-vertical-uITMCR3E.png"
+import binghamton from "@/assets/images/logos/Binghamton University.png"
+import broward from "@/assets/images/logos/broward.svg"
+import byu from "@/assets/images/logos/byu.svg"
 import columbia from "@/assets/images/logos/columbia.png"
+import fiu from "@/assets/images/logos/FIU Alone.png"
+import georgia from "@/assets/images/logos/georgia.svg"
+import harvard from "@/assets/images/logos/Harvard.png"
 import illinoisState from "@/assets/images/logos/Illinois State University.png"
+import iowa from "@/assets/images/logos/iowa.svg"
 import iu from "@/assets/images/logos/iu.svg"
 import leeds from "@/assets/images/logos/leeds.png"
-import osu from "@/assets/images/logos/osu.png"
-import stanford from "@/assets/images/logos/Stanford_logo.png"
-import ucla from "@/assets/images/logos/ucla.png"
-import uq from "@/assets/images/logos/Uni-of-Queensland-logo-1-3842719651.png"
+import macquarie from "@/assets/images/logos/Macquarie.png"
+import maryland from "@/assets/images/logos/University of Maryland Logo Dark.svg"
+import melbourne from "@/assets/images/logos/melbourne.svg"
 import michigan from "@/assets/images/logos/University of Michigan.png"
 import minnesota from "@/assets/images/logos/university_of-minnesota-logo-freelogovectors.net_-4276898260.png"
-import uob from "@/assets/images/logos/uob-logo-standard.svg"
-import vanderbilt from "@/assets/images/logos/Vanderbilt-Logo-PNG-Images-3148447004.png"
-import texasAAndM from "@/assets/images/logos/TAM-LogoBox.png"
-import binghamton from "@/assets/images/logos/Binghamton University.png"
+import missouri from "@/assets/images/logos/missouri.svg"
+import missouriState from "@/assets/images/logos/MU Logo.svg"
+import nebraska from "@/assets/images/logos/unl.png"
 import newcastle from "@/assets/images/logos/Newcastle University.jpg"
-import asu from "@/assets/images/logos/arizona-state-university-logo-vertical-uITMCR3E.png"
+import northeastern from "@/assets/images/logos/Northeastern.png"
+import osu from "@/assets/images/logos/osu.png"
+import purdue from "@/assets/images/logos/Purdue.svg"
+import scu from "@/assets/images/logos/SCU.png"
+import stAndrews from "@/assets/images/logos/university-of-st-andrews-logo-foundation.svg"
+import stanford from "@/assets/images/logos/Stanford_logo.png"
+import syracuse from "@/assets/images/logos/syracuse.svg"
+import texasAAndM from "@/assets/images/logos/TAM-LogoBox.png"
+import ucla from "@/assets/images/logos/ucla.png"
+import uclaGeffen from "@/assets/images/logos/ucla-geffen.svg"
+import uob from "@/assets/images/logos/uob-logo-standard.svg"
+import uq from "@/assets/images/logos/Uni-of-Queensland-logo-1-3842719651.png"
+import vanderbilt from "@/assets/images/logos/Vanderbilt-Logo-PNG-Images-3148447004.png"
+import washu from "@/assets/images/logos/washu.svg"
 import wvu from "@/assets/images/logos/wvu.svg"
 import yale from "@/assets/images/logos/yale.jpg"
-import uclaGeffen from "@/assets/images/logos/ucla-geffen.svg"
+
 
 export const designSystems = [
   {
@@ -132,5 +152,119 @@ export const designSystems = [
     institution: "David Geffen School Of Medicine at UCLA Health",
     url: "https://medschool.ucla.edu/themes/custom/surface/storybook/",
     logo: uclaGeffen
+  },
+  {
+    name: "Aalto Design System",
+    institution: "Aalto University",
+    url: "https://brand.aalto.fi/ds/",
+    logo: aalto
+  },
+  {
+    name: "BYU Components",
+    institution: "Brigham Young University",
+    url: "https://sites.byu.edu/components",
+    logo: byu
+  },
+  {
+    name: "Broward Design System",
+    institution: "Broward College",
+    url: "https://www.broward.edu/design-system/",
+    logo: broward
+  },
+  {
+    name: "Pantera",
+    institution: "Florida International",
+    url: "https://pantera.fiu.edu/",
+    logo: fiu
+  },
+  {
+    name: "Harvard Design System",
+    institution: "Harvard",
+    url: "https://designsystem.harvardsites.harvard.edu/",
+    logo: harvard
+  },
+  {
+    name: "GEM",
+    institution: "Macquarie University",
+    url: "https://gem.mq.edu.au",
+    logo: macquarie
+  },
+  {
+    name: "Missouri State Web Design",
+    institution: "Missouri State",
+    url: "https://www.missouristate.edu/WebDesign/",
+    logo: missouriState
+  },
+  {
+    name: "Northeastern Design System",
+    institution: "Northeastern",
+    url: "https://northeastern.netlify.app/",
+    logo: northeastern
+  },
+  {
+    name: "Campus Partner",
+    institution: "Purdue",
+    url: "https://www.figma.com/proto/ra8Pzq9MjZUDWskQdA5AQx/Campus-Partner-(WIP)",
+    logo: purdue
+  },
+  {
+    name: "Santa Clara University Design System",
+    institution: "Santa Clara University",
+    url: "https://santaclarauniversity.github.io",
+    logo: scu
+  },
+  {
+    name: "Syracuse Design System",
+    institution: "Syracuse",
+    url: "https://designsystem.syr.edu",
+    logo: syracuse
+  },
+  {
+    name: "UGA Design System",
+    institution: "University of Georgia",
+    url: "https://design.online.uga.edu",
+    logo: georgia
+  },
+  {
+    name: "UIDS",
+    institution: "University of Iowa",
+    url: "https://uids.brand.uiowa.edu/",
+    logo: iowa
+  },
+  {
+    name: "UMD Design System",
+    institution: "University of Maryland",
+    url: "https://designsystem.umd.edu/",
+    logo: maryland
+  },
+  {
+    name: "University of Melbourne Design System",
+    institution: "University of Melbourne",
+    url: "https://designsystem.web.unimelb.edu.au",
+    logo: melbourne
+  },
+  {
+    name: "University of Missouri Design System",
+    institution: "University of Missouri",
+    url: "https://designsystem.missouri.edu",
+    logo: missouri
+  },
+  {
+    name: "WDN Framework",
+    institution: "University of Nebraska Lincoln",
+    url: "https://wdn.unl.edu/about-framework/",
+    logo: nebraska
+  },
+  {
+    name: "St Andrews Design System",
+    institution: "University of St Andrews",
+    url: "https://design.st-andrews.ac.uk",
+    logo: stAndrews
+  },
+  {
+    name: "WashU Design System",
+    institution: "WashU",
+    url: "https://live-webdesign-washu.pantheonsite.io/",
+    logo: washu
   }
 ];
