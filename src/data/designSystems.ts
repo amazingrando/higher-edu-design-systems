@@ -132,5 +132,119 @@ export const designSystems = [
     institution: "David Geffen School Of Medicine at UCLA Health",
     url: "https://medschool.ucla.edu/themes/custom/surface/storybook/",
     logo: uclaGeffen
+  },
+  {
+    name: "Aalto Design System",
+    institution: "Aalto University",
+    url: "https://brand.aalto.fi/ds/",
+    logo: null
+  },
+  {
+    name: "BYU Components",
+    institution: "Bringham Young University",
+    url: "https://sites.byu.edu/components",
+    logo: null
+  },
+  {
+    name: "Broward Design System",
+    institution: "Broward College",
+    url: "https://www.broward.edu/design-system/",
+    logo: null
+  },
+  {
+    name: "Pantera",
+    institution: "Florida International",
+    url: "https://pantera.fiu.edu/",
+    logo: null
+  },
+  {
+    name: "Harvard Design System",
+    institution: "Harvard",
+    url: "https://designsystem.harvardsites.harvard.edu/",
+    logo: null
+  },
+  {
+    name: "GEM",
+    institution: "Macquarie University",
+    url: "https://gem.mq.edu.au",
+    logo: null
+  },
+  {
+    name: "Missouri State Web Design",
+    institution: "Missouri State",
+    url: "https://www.missouristate.edu/WebDesign/",
+    logo: null
+  },
+  {
+    name: "Northeastern Design System",
+    institution: "Northeastern",
+    url: "https://northeastern.netlify.app/",
+    logo: null
+  },
+  {
+    name: "Campus Partner",
+    institution: "Purdue",
+    url: "https://www.figma.com/proto/ra8Pzq9MjZUDWskQdA5AQx/Campus-Partner-(WIP)",
+    logo: null
+  },
+  {
+    name: "Santa Clara University Design System",
+    institution: "Santa Clara University",
+    url: "https://santaclarauniversity.github.io",
+    logo: null
+  },
+  {
+    name: "Syracuse Design System",
+    institution: "Syracuse",
+    url: "https://designsystem.syr.edu",
+    logo: null
+  },
+  {
+    name: "UGA Design System",
+    institution: "University of Georgia",
+    url: "https://design.online.uga.edu",
+    logo: null
+  },
+  {
+    name: "UIDS",
+    institution: "University of Iowa",
+    url: "https://uids.brand.uiowa.edu/",
+    logo: null
+  },
+  {
+    name: "UMD Design System",
+    institution: "University of Maryland",
+    url: "https://designsystem.umd.edu/",
+    logo: null
+  },
+  {
+    name: "University of Melbourne Design System",
+    institution: "University of Melbourne",
+    url: "https://designsystem.web.unimelb.edu.au",
+    logo: null
+  },
+  {
+    name: "University of Missouri Design System",
+    institution: "University of Missouri",
+    url: "https://designsystem.missouri.edu",
+    logo: null
+  },
+  {
+    name: "WDN Framework",
+    institution: "University of Nebraska Lincoln",
+    url: "https://wdn.unl.edu/about-framework/",
+    logo: null
+  },
+  {
+    name: "St Andrews Design System",
+    institution: "University of St Andrews",
+    url: "https://design.st-andrews.ac.uk",
+    logo: null
+  },
+  {
+    name: "WashU Design System",
+    institution: "WashU",
+    url: "https://live-webdesign-washu.pantheonsite.io/",
+    logo: null
   }
 ];
