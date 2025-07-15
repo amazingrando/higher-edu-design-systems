@@ -23,6 +23,7 @@ import newcastle from "@/assets/images/logos/Newcastle University.jpg"
 import northeastern from "@/assets/images/logos/Northeastern.png"
 import osu from "@/assets/images/logos/osu.png"
 import purdue from "@/assets/images/logos/Purdue.svg"
+import rutgers from "@/assets/images/logos/Rutgers_Primary_Mark.svg"
 import scu from "@/assets/images/logos/SCU.png"
 import stAndrews from "@/assets/images/logos/university-of-st-andrews-logo-foundation.svg"
 import stanford from "@/assets/images/logos/Stanford_logo.png"
@@ -266,5 +267,11 @@ export const designSystems = [
     institution: "WashU",
     url: "https://live-webdesign-washu.pantheonsite.io/",
     logo: washu
+  },
+  {
+    name: "Rutgers Core Component Library",
+    institution: "Rutgers",
+    url: "https://rccldemo.rutgers.edu/",
+    logo: rutgers
   }
 ];
