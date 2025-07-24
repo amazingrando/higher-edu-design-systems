@@ -43,7 +43,7 @@ export const designSystems = [
   {
     name: "Unity Design System",
     institution: "Arizona State University",
-    url: "https://unity.web.asu.edu/#",
+    url: "https://brandguide.asu.edu/execution-guidelines/web/building-sites/unity",
     logo: asu
   },
   {
