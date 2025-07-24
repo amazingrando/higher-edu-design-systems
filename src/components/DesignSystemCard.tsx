@@ -6,7 +6,7 @@ interface DesignSystem {
   name: string;
   url: string;
   institution: string;
-  logo?: string;
+  logo?: any; // or a more specific type if you want
 }
 
 interface DesignSystemCardProps {
@@ -26,13 +26,31 @@ export const DesignSystemCard = ({ designSystem }: DesignSystemCardProps) => {
       <CardHeader className="text-green-dark p-0">
         {logo && !imageError && (
           <div className="bg-yellow-500/30 rounded p-2 md:p-8 flex items-center justify-center">
-            <img 
-              src={logo} 
-              alt={`${institution} ${name} logo`}
-              className="aspect-video object-contain max-h-[100px] h-[60px] md:max-h-[180px] md:h-[100px] lg:h-[150px]"
-              onError={handleImageError}
-              loading="lazy"
-            />
+            {Array.isArray(logo.sources) && logo.img ? (
+              <picture>
+                {logo.sources.map((source: any) => (
+                  <source key={source.type} srcSet={source.srcSet} type={source.type} />
+                ))}
+                <img
+                  src={logo.img.src}
+                  width={logo.img.width}
+                  height={logo.img.height}
+                  alt={`${institution} ${name} logo`}
+                  className="aspect-video object-contain max-h-[100px] h-[60px] md:max-h-[180px] md:h-[100px] lg:h-[150px]"
+                  onError={handleImageError}
+                  loading="lazy"
+                />
+              </picture>
+            ) : (
+              // fallback for SVGs or images not processed by imagetools
+              <img
+                src={logo.img?.src || logo.src || logo}
+                alt={`${institution} ${name} logo`}
+                className="aspect-video object-contain max-h-[100px] h-[60px] md:max-h-[180px] md:h-[100px] lg:h-[150px]"
+                onError={handleImageError}
+                loading="lazy"
+              />
+            )}
           </div>
         )}
         {(!logo || imageError) && (
