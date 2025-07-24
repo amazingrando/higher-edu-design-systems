@@ -17,11 +17,11 @@ const Index = () => {
   );
 
   return (
-    <div className="min-h-screen bg-green-dark  bg-position-[center_top_1rem] md:bg-contain bg-no-repeat font-base" style={{ backgroundImage: `url(${bgImage})` }}>
+    <div className="min-h-screen bg-green-dark bg-position-[center_top_1rem] md:bg-contain bg-no-repeat font-base" style={{ backgroundImage: `url(${bgImage})` }}>
       <div className="container mx-auto px-4 py-4 md:px-8 md:py-8">
         
         <header className="mt-8 md:mt-16 mb-12 text-white md:aspect-[2.7/1] flex gap-4 md:gap-8">
-          <FontAwesomeIcon icon={faBuildingColumns} className="text-3xl md:text-5xl relative top-1" />
+          <FontAwesomeIcon icon={faBuildingColumns} className="text-3xl md:text-5xl relative top-1" aria-hidden="true" />
           
           <div className="max-w-2xl">
             <h1 className="text-3xl md:text-6xl text-balance font-bold mb-4">The Design Systems of Higher Education</h1>
@@ -32,7 +32,17 @@ const Index = () => {
           </div>
         </header>
 
-        <main className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 md:gap-6">
+        {/* Add search functionality */}
+        <div className="mb-8 mx-auto max-w-2xl">
+          <SearchBar onSearch={setSearchTerm} className="" />
+          {searchTerm && (
+            <p className="text-white mt-2 text-sm">
+              Showing {filteredSystems.length} of {designSystems.length} design systems
+            </p>
+          )}
+        </div>
+
+        <main className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 md:gap-6" role="main" aria-label="Design systems collection">
           {filteredSystems
             .sort((a, b) => a.name.localeCompare(b.name))
             .map((system, index) => (
@@ -48,13 +58,13 @@ const Index = () => {
         </main>
 
         {filteredSystems.length === 0 && (
-          <div className="text-center py-12">
-            <p className="text-lg text-muted-foreground">No design systems found matching your search.</p>
+          <div className="text-center py-12" role="status" aria-live="polite">
+            <p className="text-lg text-white">No design systems found matching "{searchTerm}".</p>
           </div>
         )}
 
-        <footer className="border-t border-yellow-500/20 py-8 text-center text-white mt-8">
-          <p>Build with ❤️ by <a href="https://amazingrando.com" target="_blank" rel="noopener noreferrer" className="underline">Amazing Rando Design</a> • <FontAwesomeIcon icon={faGithub} /> <a href="https://github.com/amazingrando/higher-edu-design-systems" target="_blank" rel="noopener noreferrer" className="underline">View on GitHub</a></p>
+        <footer className="border-t border-yellow-500/20 py-8 text-center text-white mt-8" role="contentinfo">
+          <p>Built with ❤️ by <a href="https://amazingrando.com" target="_blank" rel="noopener noreferrer" className="underline">Amazing Rando Design</a> • <FontAwesomeIcon icon={faGithub} aria-hidden="true" /> <a href="https://github.com/amazingrando/higher-edu-design-systems" target="_blank" rel="noopener noreferrer" className="underline">View on GitHub</a></p>
         </footer>
       </div>
     </div>
