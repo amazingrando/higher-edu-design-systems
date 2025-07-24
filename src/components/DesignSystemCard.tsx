@@ -1,6 +1,4 @@
-import React from 'react';
 import { Card, CardHeader, CardContent, CardFooter } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 
 interface DesignSystem {
@@ -22,16 +20,16 @@ export const DesignSystemCard = ({ name, url, institution, logo }: DesignSystem)
           )}
       </CardHeader>
       <CardContent className="p-3 md:p-6">
-        <h3 className="text-lg leading-tight md:text-2xl font-semibold text-balance">{name}</h3>
+        <h2 className="text-lg leading-tight md:text-2xl font-semibold text-balance">{name}</h2>
         <p className="text-sm md:text-lg text-balance">{institution}</p>
       </CardContent>
-      <CardFooter className="mt-auto p-3 md:p-6">
-        <Button variant="outline" className="w-full bg-yellow-400 ring-yellow-500 ring-1 text-yellow-950 hover:bg-yellow-500" onClick={() => window.open(url, '_blank')}>
+      <CardFooter className="mt-auto p-3 md:p-6 flex flex-col gap-2">
+        <a href={url} className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full bg-yellow-400 ring-yellow-500 ring-1 text-yellow-950 hover:bg-yellow-500" onClick={() => window.open(url, '_blank')}>
           <span>
             View <span className="hidden md:inline">Design System</span>
           </span>
           <ExternalLink className="w-4 h-4 mr-2" />
-        </Button>
+        </a>
       </CardFooter>
     </Card>
   );
