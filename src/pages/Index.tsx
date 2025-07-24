@@ -38,10 +38,7 @@ const Index = () => {
             .map((system, index) => (
               <React.Fragment key={system.url}>
                 <DesignSystemCard
-                  name={system.name}
-                  url={system.url}
-                  institution={system.institution}
-                  logo={system.logo}
+                  designSystem={system}
                 />
                 {index === 1 && <div className="md:hidden col-span-2"><AddYourDS /></div>}
                 {index === 3 && <div className="hidden md:block lg:hidden col-span-2"><AddYourDS /></div>}
