@@ -4,6 +4,7 @@ import binghamton from "@/assets/images/logos/Binghamton University.png?w=300;60
 import broward from "@/assets/images/logos/broward.svg?w=300;600;900&format=avif;webp;svg&as=picture"
 import byu from "@/assets/images/logos/byu.svg?w=300;600;900&format=avif;webp;svg&as=picture"
 import columbia from "@/assets/images/logos/columbia.png?w=300;600;900&format=avif;webp;png&as=picture"
+import dallasCollege from "@/assets/images/logos/dallasCollege.svg"
 import fiu from "@/assets/images/logos/FIU Alone.png?w=300;600;900&format=avif;webp;png&as=picture"
 import georgia from "@/assets/images/logos/georgia.svg?w=300;600;900&format=avif;webp;svg&as=picture"
 import harvard from "@/assets/images/logos/Harvard.png?w=300;600;900&format=avif;webp;png&as=picture"
@@ -37,7 +38,6 @@ import vanderbilt from "@/assets/images/logos/Vanderbilt-Logo-PNG-Images-3148447
 import washu from "@/assets/images/logos/washu.svg?w=300;600;900&format=avif;webp;svg&as=picture"
 import wvu from "@/assets/images/logos/wvu.svg?w=300;600;900&format=avif;webp;svg&as=picture"
 import yale from "@/assets/images/logos/yale.jpg?w=300;600;900&format=avif;webp;jpg&as=picture"
-
 
 export const designSystems = [
   {
@@ -273,5 +273,11 @@ export const designSystems = [
     institution: "Rutgers",
     url: "https://rccldemo.rutgers.edu/",
     logo: rutgers
+  },
+  {
+    name: "Pegasus",
+    institution: "Dallas College",
+    url: "https://www.dallascollege.edu/about/style/documents/pegasus/index.html",
+    logo: dallasCollege
   }
 ];
