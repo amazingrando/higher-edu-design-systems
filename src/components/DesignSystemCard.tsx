@@ -6,7 +6,8 @@ interface DesignSystem {
   name: string;
   url: string;
   institution: string;
-  logo?: any; // or a more specific type if you want
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  logo?: any;
 }
 
 interface DesignSystemCardProps {
@@ -28,7 +29,7 @@ export const DesignSystemCard = ({ designSystem }: DesignSystemCardProps) => {
           <div className="bg-yellow-500/30 rounded p-2 md:p-8 flex items-center justify-center">
             {Array.isArray(logo.sources) && logo.img ? (
               <picture>
-                {logo.sources.map((source: any) => (
+                {logo.sources.map((source: { srcSet: string; type: string }) => (
                   <source key={source.type} srcSet={source.srcSet} type={source.type} />
                 ))}
                 <img
