@@ -61,7 +61,7 @@ export const designSystems = [
   {
     name: "Rivet",
     institution: "Indiana University",
-    url: "https://rivet.uits.iu.edu/",
+    url: "https://rivet.iu.edu/",
     logo: iu
   },
   {
