@@ -1,3 +1,5 @@
+[![](https://github.com/amazingrando/amazingrando/blob/master/assets/amazing-rando-badge.svg)](https://amazingrando.com) [![Netlify Status](https://api.netlify.com/api/v1/badges/77e3f7fb-a544-48dd-8df1-3567f1aa9bbc/deploy-status)](https://app.netlify.com/projects/higher-ed-design-systems/deploys)
+
 # Higher Education Design Systems Collection
   
 ![Higher Education Design Systems Collection](public/sharing-image.png) 
