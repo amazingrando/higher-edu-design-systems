@@ -36,6 +36,7 @@ import uob from "@/assets/images/logos/uob-logo-standard.svg?w=300;600;900&forma
 import uq from "@/assets/images/logos/Uni-of-Queensland-logo-1-3842719651.png?w=300;600;900&format=avif;webp;png&as=picture"
 import vanderbilt from "@/assets/images/logos/Vanderbilt-Logo-PNG-Images-3148447004.png?w=300;600;900&format=avif;webp;png&as=picture"
 import washu from "@/assets/images/logos/washu.svg?w=300;600;900&format=avif;webp;svg&as=picture"
+import wsu from "@/assets/images/logos/wsu-primary-stacked-color-300.png"
 import wvu from "@/assets/images/logos/wvu.svg?w=300;600;900&format=avif;webp;svg&as=picture"
 import yale from "@/assets/images/logos/yale.jpg?w=300;600;900&format=avif;webp;jpg&as=picture"
 
@@ -279,5 +280,11 @@ export const designSystems = [
     institution: "Dallas College",
     url: "https://www.dallascollege.edu/about/style/documents/pegasus/index.html",
     logo: dallasCollege
+  },
+  {
+    name: "WSU Base Template",
+    institution: "Wayne State University",
+    url: "https://base.wayne.edu/",
+    logo: wsu
   }
 ];
