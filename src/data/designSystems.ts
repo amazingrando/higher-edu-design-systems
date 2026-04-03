@@ -39,6 +39,7 @@ import washu from "@/assets/images/logos/washu.svg?w=300;600;900&format=avif;web
 import wsu from "@/assets/images/logos/wsu-primary-stacked-color-300.png"
 import wvu from "@/assets/images/logos/wvu.svg?w=300;600;900&format=avif;webp;svg&as=picture"
 import yale from "@/assets/images/logos/yale.jpg?w=300;600;900&format=avif;webp;jpg&as=picture"
+import harvardBusinessSchool from "@/assets/images/logos/HBS.png?w=300;600;900&format=avif;webp;png&as=picture"
 
 export const designSystems = [
   {
@@ -286,5 +287,11 @@ export const designSystems = [
     institution: "Wayne State University",
     url: "https://base.wayne.edu/",
     logo: wsu
+  },
+  {
+    name: "Harvard Business School Design System",
+    institution: "Harvard Business School",
+    url: "https://identity.hbs.edu",
+    logo: harvardBusinessSchool
   }
 ];
