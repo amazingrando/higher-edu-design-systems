@@ -30,6 +30,7 @@ import stAndrews from "@/assets/images/logos/university-of-st-andrews-logo-found
 import stanford from "@/assets/images/logos/Stanford_logo.png?w=300;600;900&format=avif;webp;png&as=picture"
 import syracuse from "@/assets/images/logos/syracuse.svg?w=300;600;900&format=avif;webp;svg&as=picture"
 import texasAAndM from "@/assets/images/logos/TAM-LogoBox.png?w=300;600;900&format=avif;webp;png&as=picture"
+import ucl from "@/assets/images/logos/ucl.svg?w=300;600;900&format=avif;webp;svg&as=picture"
 import ucla from "@/assets/images/logos/ucla.png?w=300;600;900&format=avif;webp;png&as=picture"
 import uclaGeffen from "@/assets/images/logos/ucla-geffen.svg?w=300;600;900&format=avif;webp;svg&as=picture"
 import uob from "@/assets/images/logos/uob-logo-standard.svg?w=300;600;900&format=avif;webp;svg&as=picture"
@@ -125,6 +126,12 @@ export const designSystems = [
     institution: "Newcastle University",
     url: "https://www.ncl.ac.uk/design-system/",
     logo: newcastle
+  },
+  {
+    name: "UCL Design System",
+    institution: "University College London",
+    url: "https://www.ucl.ac.uk/brand-and-experience/experience/ucl-design-system",
+    logo: ucl
   },
   {
     name: "WVU Design System",
