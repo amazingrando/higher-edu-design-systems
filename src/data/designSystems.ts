@@ -41,6 +41,14 @@ import wsu from "@/assets/images/logos/wsu-primary-stacked-color-300.png"
 import wvu from "@/assets/images/logos/wvu.svg?w=300;600;900&format=avif;webp;svg&as=picture"
 import yale from "@/assets/images/logos/yale.jpg?w=300;600;900&format=avif;webp;jpg&as=picture"
 import harvardBusinessSchool from "@/assets/images/logos/HBS.png?w=300;600;900&format=avif;webp;png&as=picture"
+import colorado from "@/assets/images/logos/colorado.svg?w=300;600;900&format=avif;webp;svg&as=picture"
+import edinburgh from "@/assets/images/logos/edinburgh.png?w=300;600;900&format=avif;webp;png&as=picture"
+import florida from "@/assets/images/logos/florida.png?w=300;600;900&format=avif;webp;png&as=picture"
+import gatech from "@/assets/images/logos/gatech.svg?w=300;600;900&format=avif;webp;svg&as=picture"
+import gmu from "@/assets/images/logos/gmu.png?w=300;600;900&format=avif;webp;png&as=picture"
+import illinois from "@/assets/images/logos/illinois.png?w=300;600;900&format=avif;webp;png&as=picture"
+import ubc from "@/assets/images/logos/ubc.png?w=300;600;900&format=avif;webp;png&as=picture"
+import utdallas from "@/assets/images/logos/utdallas.svg?w=300;600;900&format=avif;webp;svg&as=picture"
 
 export const designSystems = [
   {
@@ -300,5 +308,53 @@ export const designSystems = [
     institution: "Harvard Business School",
     url: "https://identity.hbs.edu",
     logo: harvardBusinessSchool
+  },
+  {
+    name: "CU Boulder Web Style Guide",
+    institution: "University of Colorado Boulder",
+    url: "https://styleguide.colorado.edu/",
+    logo: colorado
+  },
+  {
+    name: "Edinburgh Design System",
+    institution: "University of Edinburgh",
+    url: "https://information-services.ed.ac.uk/design-system/",
+    logo: edinburgh
+  },
+  {
+    name: "Mercury",
+    institution: "University of Florida",
+    url: "https://brandcenter.ufl.edu/mercury-web-theme/",
+    logo: florida
+  },
+  {
+    name: "GT Theme",
+    institution: "Georgia Institute of Technology",
+    url: "https://theme.gatech.edu/",
+    logo: gatech
+  },
+  {
+    name: "SiteMasonry",
+    institution: "George Mason University",
+    url: "https://sitemasonry.gmu.edu/",
+    logo: gmu
+  },
+  {
+    name: "Illinois Web Theme",
+    institution: "University of Illinois Urbana-Champaign",
+    url: "https://webtheme.illinois.edu/",
+    logo: illinois
+  },
+  {
+    name: "UBC CLF",
+    institution: "University of British Columbia",
+    url: "https://clf.ubc.ca/",
+    logo: ubc
+  },
+  {
+    name: "UTD Web Design System",
+    institution: "University of Texas at Dallas",
+    url: "https://wds.utdallas.edu/",
+    logo: utdallas
   }
 ];
