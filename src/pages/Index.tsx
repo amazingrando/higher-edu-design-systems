@@ -10,19 +10,28 @@ import { AddYourDS } from '@/components/AddYourDS';
 
 const Index = () => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [sortBy, setSortBy] = useState<'name' | 'institution'>('name');
 
-  const filteredSystems = designSystems.filter(system => 
-    system.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    system.institution.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filteredSystems = designSystems
+    .filter(system =>
+      system.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      system.institution.toLowerCase().includes(searchTerm.toLowerCase())
+    )
+    .sort((a, b) => {
+      if (sortBy === 'institution') {
+        return a.institution.localeCompare(b.institution);
+      }
+
+      return a.name.localeCompare(b.name);
+    });
 
   return (
     <div className="min-h-screen bg-green-dark bg-position-[center_top_1rem] md:bg-contain bg-no-repeat font-base" style={{ backgroundImage: `url(${bgImage})` }}>
       <div className="container mx-auto px-4 py-4 md:px-8 md:py-8">
-        
+
         <header className="mt-8 md:mt-16 mb-12 text-white md:aspect-[2.7/1] flex gap-4 md:gap-8">
           <FontAwesomeIcon icon={faBuildingColumns} className="text-3xl md:text-5xl relative top-1" aria-hidden="true" />
-          
+
           <div className="max-w-2xl">
             <h1 className="text-3xl md:text-6xl text-balance font-bold mb-4">The Design Systems of Higher Education</h1>
             <p className="text-lg md:text-3xl mb-8 text-balance font-medium">
@@ -34,7 +43,12 @@ const Index = () => {
 
         {/* Add search functionality */}
         <div className="mb-8 mx-auto max-w-2xl">
-          <SearchBar onSearch={setSearchTerm} className="" />
+          <SearchBar
+            onSearch={setSearchTerm}
+            sortBy={sortBy}
+            onSortChange={setSortBy}
+            className=""
+          />
           {searchTerm && (
             <p className="text-white mt-2 text-sm">
               Showing {filteredSystems.length} of {designSystems.length} design systems
@@ -42,19 +56,17 @@ const Index = () => {
           )}
         </div>
 
-        <main className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 md:gap-6" role="main" aria-label="Design systems collection">
-          {filteredSystems
-            .sort((a, b) => a.name.localeCompare(b.name))
-            .map((system, index) => (
-              <React.Fragment key={system.url}>
-                <DesignSystemCard
-                  designSystem={system}
-                />
-                {index === 1 && <div className="md:hidden col-span-2"><AddYourDS /></div>}
-                {index === 3 && <div className="hidden md:block lg:hidden col-span-2"><AddYourDS /></div>}
-                {index === 2 && <div className="hidden lg:block col-span-2"><AddYourDS /></div>}
-              </React.Fragment>
-            ))}
+        <main className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6" role="main" aria-label="Design systems collection">
+          {filteredSystems.map((system, index) => (
+            <React.Fragment key={system.url}>
+              <DesignSystemCard
+                designSystem={system}
+              />
+              {index === 1 && <div className="md:hidden col-span-2"><AddYourDS /></div>}
+              {index === 3 && <div className="hidden md:block lg:hidden col-span-2"><AddYourDS /></div>}
+              {index === 3 && <div className="hidden lg:block col-span-2"><AddYourDS /></div>}
+            </React.Fragment>
+          ))}
         </main>
 
         {filteredSystems.length === 0 && (
