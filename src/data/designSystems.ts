@@ -49,6 +49,7 @@ import gmu from "@/assets/images/logos/gmu.png?w=300;600;900&format=avif;webp;pn
 import illinois from "@/assets/images/logos/illinois.png?w=300;600;900&format=avif;webp;png&as=picture"
 import ubc from "@/assets/images/logos/ubc.png?w=300;600;900&format=avif;webp;png&as=picture"
 import utdallas from "@/assets/images/logos/utdallas.svg?w=300;600;900&format=avif;webp;svg&as=picture"
+import pennLibraries from "@/assets/images/logos/penn-libraries.png?w=300;600;900&format=avif;webp;png&as=picture"
 
 export const designSystems = [
   {
@@ -356,5 +357,11 @@ export const designSystems = [
     institution: "University of Texas at Dallas",
     url: "https://wds.utdallas.edu/",
     logo: utdallas
+  },
+  {
+    name: "Penn Libraries Design System",
+    institution: "University of Pennsylvania Libraries",
+    url: "https://designsystem.library.upenn.edu/",
+    logo: pennLibraries
   }
 ];
