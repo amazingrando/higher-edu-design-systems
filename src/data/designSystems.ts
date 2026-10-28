@@ -50,6 +50,9 @@ import illinois from "@/assets/images/logos/illinois.png?w=300;600;900&format=av
 import ubc from "@/assets/images/logos/ubc.png?w=300;600;900&format=avif;webp;png&as=picture"
 import utdallas from "@/assets/images/logos/utdallas.svg?w=300;600;900&format=avif;webp;svg&as=picture"
 import pennLibraries from "@/assets/images/logos/penn-libraries.png?w=300;600;900&format=avif;webp;png&as=picture"
+import ncState from "@/assets/images/logos/ncsu.png?w=300;600;900&format=avif;webp;png&as=picture"
+import notreDame from "@/assets/images/logos/notredame.svg?w=300;600;900&format=avif;webp;svg&as=picture"
+import utk from "@/assets/images/logos/utk.svg?w=300;600;900&format=avif;webp;svg&as=picture"
 
 export const designSystems = [
   {
@@ -363,5 +366,23 @@ export const designSystems = [
     institution: "University of Pennsylvania Libraries",
     url: "https://designsystem.library.upenn.edu/",
     logo: pennLibraries
+  },
+  {
+    name: "Designing for NC State",
+    institution: "NC State University",
+    url: "https://brand.ncsu.edu/designing-for-nc-state/",
+    logo: ncState
+  },
+  {
+    name: "Digital Design System",
+    institution: "University of Notre Dame",
+    url: "https://webtheme.nd.edu/",
+    logo: notreDame
+  },
+  {
+    name: "Torch Theme",
+    institution: "University of Tennessee, Knoxville",
+    url: "https://brand.utk.edu/web-design-system/",
+    logo: utk
   }
 ];
