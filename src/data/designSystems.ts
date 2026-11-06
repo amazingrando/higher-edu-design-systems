@@ -101,7 +101,7 @@ export const designSystems = [
   {
     name: "Vanderbilt Design System",
     institution: "Vanderbilt University",
-    url: "https://upstatement.com/case-study/vanderbilt-university-design-system/",
+    url: "https://zeroheight.com/1773296e5/v/latest/p/7267a3-vanderbilt-web-guidelines",
     logo: vanderbilt
   },
   {
